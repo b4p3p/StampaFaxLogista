@@ -1,0 +1,26 @@
+﻿<Window x:Class="StampaFax.FrmImpostaGiorno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Imposta giorno prelievo" Height="397" Width="300"
+        Topmost="True" WindowStartupLocation="CenterScreen"
+        >
+    <StackPanel Margin="20">
+        
+        <Label FontSize="18" HorizontalContentAlignment="Center"> Giorno prelievo:</Label>
+        
+        <RadioButton Name="optLunedì" Margin="0,10,0,10" Content="Lunedì" FontSize="15"></RadioButton>
+        <RadioButton Name="optMartedì" Margin="0,10,0,10" Content="Martedì" FontSize="15"></RadioButton>
+        <RadioButton Name="optMercoledì" Margin="0,10,0,10" Content="Mercoledì" FontSize="15"></RadioButton>
+        <RadioButton Name="optGiovedì" Margin="0,10,0,10" Content="Giovedì" FontSize="15"></RadioButton>
+        <RadioButton Name="optVenerdì" Margin="0,10,0,10" Content="Venerdì" FontSize="15"></RadioButton>
+        <RadioButton Name="optSabato" Margin="0,10,0,20" Content="Sabato" FontSize="15"></RadioButton>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="cmdAnnulla" Width="100" Height="25" Margin="0,0,10,0" Click="cmdAnnulla_Click">ANNULLA</Button>
+            <Button Name="cmdConferma" Width="100" Height="25" Click="cmdConferma_Click">CONFERMA</Button>
+            
+        </StackPanel>
+        
+    </StackPanel>
+        
+</Window>
